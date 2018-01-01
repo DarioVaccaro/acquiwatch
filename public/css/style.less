@@ -1,0 +1,456 @@
+@Lato: 'Lato', sans-serif;
+
+.header-box-style {
+	background: #323232;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.15), inset 0 0 3px 0 rgba(102,102,102,0.14);
+	border-radius: 4px;
+	height: 350px;
+	display: inline-block;
+	vertical-align: top;
+}
+.filter-bar-style {
+	background: #323232;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.15), inset 0 0 3px 0 rgba(102,102,102,0.14);
+	border-radius: 4px;
+	margin: 0 25px 0 25px;
+}
+.global-button-style {
+	padding: 5px 20px;
+	border: 0px;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 2px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: @Lato;
+	background: #252525;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+nav {
+	background: #1E1E1E;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.36);
+	color: #FFFFFF;
+	#nav-container {
+		width: 1211px;
+		margin: 0 auto;
+		#nav-brand {
+			display: inline-block;
+			span {
+				font-weight: 800;
+			}
+		}
+		#nav-navigation {
+			display: inline-block;
+			ul{
+				list-style: none;
+				li {
+					display: inline;
+					font-size: 14px;
+					margin: 0 5px 0 5px;
+					color: white;
+					a {
+						text-decoration: none;
+						tranition: .3s ease-in;
+					}
+				}
+			}
+		}
+	}
+	a:hover{
+		color: #CBCBCB;
+		tranition: .3s ease-in;
+	}
+}
+main {
+	margin: auto;
+	width: 1261px;
+	padding: 25px 0 0 0;
+	text-align: center;
+	header {
+		#primary-header-panel {
+			.header-box-style;
+			margin: 0 0 0 0;
+			width: 733px;
+		}
+		#newsletter-header-panel {
+			.header-box-style;
+			margin: 0 21px 0 0;
+			width: 354px;
+			#newsletter-content {
+				header {
+					#form-bg-image {
+						background-image: url(../img/newsletter.png);
+						height: 150px;
+						background-position: center top;
+						background-size: cover;
+						text-align:center;
+						display: flex;
+						align-items: center;
+						div {
+							background: #E25650;
+							border-radius: 4px;
+							height: 83px;
+							width: 282px;
+							margin: 0 auto;
+							text-align:center;
+							display: flex;
+							align-items: center;
+							h1 {
+								color: #FFF;
+								font-weight: 800;
+								font-size: 18px;
+							}
+						}
+					}
+				}
+				div {
+					h1 {
+						font-size: 17px;
+						font-weight: 500;
+						color: #FFF;
+						width: 250px;
+						margin: 20px auto;
+					}
+					form {
+						width: 300px;
+						margin: auto;
+						input {
+							.global-button-style;
+							padding: 10px 10px;
+							color: #CBCBCB;
+						}
+						#form-name {
+							display: block;
+							width: 280px;
+							margin-bottom: 10px;
+						}
+						#form-email {
+							width: 166px;
+						}
+						button {
+							.global-button-style;
+							background: #E25650;
+							color: white;
+							padding: 10px 30px;
+							margin: 0 0 0 8px;
+						}
+					}
+				}
+			}
+		}
+		#secondary-header-panel {
+			.header-box-style;
+			margin: 0 0 0 0;
+			width: 832px;
+			text-align: left;
+			position: relative;
+			.temporary-content {
+				padding: 20px 0 20px 20px;
+				color: white;
+				h1 {
+					margin: 0 0 15px 0;
+					font-weight: 800;
+					font-size: 35px;
+					width: 400px;
+					line-height: 45px;
+				}
+				h2 {
+					margin: 0 0 15px 0;
+					font-weight: 800;
+					font-size: 18px;
+				}
+				p {
+					margin: 0 0 0 0;
+					font-weight: 400;
+					font-size: 16px;
+					width: 350px;
+				}
+				button {
+					padding: 7px 30px;
+					border: 0px;
+					font-size: 12px;
+					font-weight: 700;
+					border-radius: 2px;
+					background: #FFFFFF;
+					position: absolute;
+					bottom: 0;
+					margin: 0 0 20px 0;
+				}
+			}
+		}
+	}
+	#interview-card-display {
+		margin: 0 0 25px 0;
+		.interview-card {
+			width: 593px;
+			height: 250px;
+			display: inline-block;
+			background: #323232;
+			box-shadow: 0 0 4px 0 rgba(0,0,0,0.15), inset 0 0 3px 0 rgba(102,102,102,0.14);
+			border-radius: 4px;
+			vertical-align: top;
+			color: #FFFFFF;
+			text-align: left;
+			#interview-card-info {
+				width: 303px;
+				height: 200px;
+				padding: 20px 20px 20px 20px;
+				display: inline-block;
+				position: relative;
+				#interview-title {
+					.global-button-style;
+					background: #AC50EF;
+				}
+				h1 {
+					margin: 15px 0 15px 0;
+					font-weight: 800;
+					// font-size: 20px;
+				}
+				p {
+					font-size: 14px;
+				}
+				h2 {
+					font-size: 12px;
+					font-weight: 800;
+					position: absolute;
+					bottom: 0;
+				}
+				#interview-valuation {
+					color: #38FFAB;
+				}
+			}
+			#interview-card-image {
+				width: 250px;
+				display: inline-block;
+				height: 100%;
+				float: right;
+				background-image: url('../img/interview/IV1.png');
+				background-position: center;
+				background-size: cover;
+			}
+		}
+		#second-interview-card {
+			margin: 0 22px 0 20px;
+		}
+		#first-interview-card , #third-interview-card{
+			width: 284px;
+			#interview-card-info {
+				width: 244px;
+			}
+			#interview-card-image {
+				display: none;
+			}
+		}
+	}
+	#acqui-display {
+		#acqui-filter-bar {
+			.filter-bar-style;
+			text-align: left;
+			.button-container {
+				button {
+					.global-button-style;
+					margin: 15px 5px 15px 5px;
+					color: white;
+				}
+				button:nth-child(1) {
+					background: #38FFAB;
+					margin: 15px 5px 15px 15px;
+				}
+				button:nth-child(2) {
+					background: #AC50EF;
+				}
+				button:nth-child(3) {
+					background: #E25650;
+				}
+				button:nth-child(4) {
+					background: #E9A24C;
+				}
+				button:nth-child(5) {
+					background: #E94FC2;
+				}
+				button:nth-child(6) {
+					background: #E7E146;
+				}
+				button:nth-child(7) {
+					background: #FF332C;
+				}
+			}
+		}
+		#acqui-card-display {
+			margin: 25px 0 0 0;
+			.acqui-card-container {
+				display: inline-block;
+				background: #323232;
+				box-shadow: 0 0 4px 0 rgba(0,0,0,0.15), inset 0 0 3px 0 rgba(102,102,102,0.14);
+				border-radius: 4px;
+				vertical-align: top;
+				height: 350px;
+				width: 284px;
+				color: #FFFFFF;
+				margin: 0 12.5px 25px 12.5px;
+				text-align: left;
+				card-info {
+					section {
+						header {
+							div {
+								height: 150px;
+								background-position: top center;
+								background-size: cover;
+							}
+						}
+						.card-body {
+							padding: 15px 15px 15px 15px;
+							position: relative;
+							height: 154px;
+							h1 {
+								margin: 0 0 0 0;
+								font-size: 30px;
+							}
+							h6 {
+								margin: 0 0 0 0;
+								font-weight: 400;
+							}
+							h2 {
+								margin: 0 0 0 0;
+								font-weight: 800;
+								color: #E9A24C;
+							}
+							p {
+								margin: 0 0 0 0;
+								font-size: 12px;
+								font-weight: 300;
+								width: 250px;
+								line-height: 20px;
+								margin: 0 0 10px 0;
+							}
+							u {
+								a {
+									text-decoration: underline;
+									color: #FFFFFF;
+									font-size: 12px;
+									position: absolute;
+									bottom: 0;
+								}
+							}
+							h3 {
+								margin: 0 0 0 0;
+								display: inline;
+								float: right;
+							}
+						}
+					}
+				}
+			}
+		}
+		#acqui-row-display {
+			margin: 25px 0 0 0;
+			.acqui-row-container {
+				background: #323232;
+				box-shadow: 0 0 4px 0 rgba(0,0,0,0.15), inset 0 0 3px 0 rgba(102,102,102,0.14);
+				border-radius: 4px;
+				// height: 100px;
+				color: #FFFFFF;
+				margin: 0 25px 25px 25px;
+				text-align: left;
+				card-row {
+					section {
+						padding: 10px 10px 10px 10px;
+						.company-name {
+							display: inline-block;
+							margin: 0 50px 0 10px;
+							.seller-name {
+								margin: 0 0 5px 0;
+							}
+							.buyer-name {
+								margin: 0 0 0 0;
+								font-weight: 400;
+							}
+						}
+					}
+					.value {
+						display: inline;
+						margin: 0 0 0 0;
+						font-weight: 800;
+						color: #38FFAB;
+					}
+					.date {
+						display: inline;
+						margin: 0 0 0 0;
+					}
+					.description {
+						display: inline;
+						margin: 0 0 0 0;
+						font-size: 12px;
+						font-weight: 300;
+						width: 250px;
+						line-height: 20px;
+						margin: 0 0 10px 0;
+					}
+					.industry {
+						display: inline-block;
+						float: right;
+						img {
+							width: 30px;
+						}
+						.industry-name {
+							margin: 0 0 0 0;
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+main {
+	header {
+
+	}
+	#news-card-display {
+		margin: 0 0 25px 0;
+		div {
+			.news-card-container {
+				display: inline-block;
+				background: #323232;
+				box-shadow: 0 0 4px 0 rgba(0,0,0,0.15), inset 0 0 3px 0 rgba(102,102,102,0.14);
+				border-radius: 4px;
+				vertical-align: top;
+				height: 180px;
+				width: 284px;
+				color: #FFFFFF;
+				margin: 25px 12.5px 0 12.5px;
+				text-align: left;
+				news-card {
+					section {
+						padding: 18px 15px 15px 15px;
+						a {
+							.news-site-link {
+								background: #E25650;
+								.global-button-style 
+							}
+							h2 {
+								font-size: 12px;
+								margin-top: 15px;
+							}
+							h1 {
+								font-weight: 800;
+								font-size: 16px;
+								margin-top: 8px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	background: #1E1E1E;
+	height: 200px;
+}

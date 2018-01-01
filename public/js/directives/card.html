@@ -1,0 +1,13 @@
+<section>
+	<header>
+		<!-- <img class="field" ng-src="img/field/{{acqui.seller.field}}.png"> -->
+		<div ng-style="{'background-image':'url(img/company/' + quote.symbol + '.jpg)'}"></div>
+	</header>
+	<div class="card-body">
+		<h6>Cupertino, California</h6>
+		<h1 class="seller" ng-style="setSize(quote.name.length)">{{quote.Name}}</h1>
+		<h2 class="value" ng-style="{ fontSize: setValueSize(quote.MarketCapitalization) }">{{quote.MarketCapitalization | valueString}}</h2>
+		<p class="desc">{{quote.desc | description}}</p>
+		<u><a class="info" href="/profile/{{quote.symbol}}">See M&A Data</a></u>
+	</div>
+</section> 

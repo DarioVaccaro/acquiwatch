@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+		<title>AcquiWatch</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900" rel="stylesheet">
+	</head>
+	<body ng-app="acquisitionApp">
+		<nav>
+			<section id="nav-container">
+				<div id="nav-brand">
+					<span><a href="/">Acquiwatch</a></span>
+				</div>
+				<div id="nav-navigation">
+					<ul>
+						<li><a href="/news">M&amp;A News</a></li>
+						<li><a href="">Company Profiles</a></li>
+						<li><a href="">Interviews</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Search</a></li>
+						<li><a href="">Contact</a></li>
+						
+					</ul>
+				</div>
+			</section>
+		</nav>
+		<main ng-controller="acquiController">
+			<header>
+<!-- 				<div id="primary-header-panel">
+					<div id="interview-content">
+						
+					</div>
+				</div> -->
+				<div id="newsletter-header-panel">
+					<div id="newsletter-content">
+						<header>
+							<div id="form-bg-image">
+								<div>
+									<h1>One Step Advertising &#9654;</h1>
+								</div>
+							</div>
+						</header>
+						<div>
+							<h1>Get new M&A news and data in your inbox weekly.</h1>
+							<form>
+								<input id="form-name" type="" name="" placeholder="Your Name">
+								<input id="form-email" type="" name="" placeholder="Your Email">
+								<button id="form-button" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="secondary-header-panel">
+					<div class="temporary-content">
+						<h1>Featured M&amp;A Profile: Apple</h1>
+						<h2>The most valuable company in the world</h2>
+						<p>
+							While the misconception is Apple doesn't acquire many companies compared to their peers, they're actually incredibly active in buying up smaller businesses.
+						</p>
+						<button>Read More</button>
+					</div>
+				</div>
+			</header>
+			<section id="news-card-display">
+				<div ng-controller="feedController" ng-init="init()">
+					<div ng-repeat="item in feed.items | unique:'title' | limitTo: 4 track by $index" class="news-card-container">
+						<news-card></news-card>
+					</div>
+				</div>
+			</section>
+			<section id="interview-card-display">
+				<div id="first-interview-card" class="interview-card">
+					<div id="interview-card-info">
+						<span id="interview-title">Founder and CEO of Paypal</span>
+						<h1>Interview with: Elon Musk</h1>
+						<p>Paypal, an electric payment startup, grew it's market share massivly after it debuted an easy way to conduct and process mobile payments.</p>
+						<h2>Paypal was acquired by <br> Ebay (EBAY) for <span id="interview-valuation">$1.5 Billion</span></h2>
+					</div>
+					<div id="interview-card-image"></div>
+				</div>
+				<div id="second-interview-card" class="interview-card">
+					<div id="interview-card-info">
+						<span id="interview-title">Founder and CEO of Paypal</span>
+						<h1>Interview with: Elon Musk</h1>
+						<p>Paypal, an electric payment startup, grew it's market share massivly after it debuted an easy way to conduct and process mobile payments.</p>
+						<h2>Paypal was acquired by <br> Ebay (EBAY) for <span id="interview-valuation">$1.5 Billion</span></h2>
+					</div>
+					<div id="interview-card-image"></div>
+				</div>
+				<div id="third-interview-card" class="interview-card">
+					<div id="interview-card-info">
+						<span id="interview-title">Founder and CEO of Paypal</span>
+						<h1>Interview with: Elon Musk</h1>
+						<p>Paypal, an electric payment startup, grew it's market share massivly after it debuted an easy way to conduct and process mobile payments.</p>
+						<h2>Paypal was acquired by <br> Ebay (EBAY) for <span id="interview-valuation">$1.5 Billion</span></h2>
+					</div>
+					<div id="interview-card-image"></div>
+				</div>
+			</section>
+			<section id="acqui-display">
+				<section id="acqui-card-display" ng-controller="profileController">
+					<div ng-repeat="quote in feed.items track by $index" class="acqui-card-container">
+					    <card-info></card-info>
+					</div>
+				</section>
+				<div id="acqui-filter-bar">
+					<!-- <span>Filters: </span> -->
+					<div class="button-container">
+						<!-- <button>Date</button> -->
+						<button>Apple</button>
+						<button>Google</button>
+						<button>Microsoft</button>
+						<button>Amazon</button>
+						<button>Facebook</button>
+						<button>Reset</button>
+					</div>
+				</div>
+				<section id="acqui-row-display">
+					<div ng-repeat="acqui in (filteredItems = (acquis | orderBy:order:reverse)) | limitTo: acquiQuantity:acquiQuantity track by $index" class="acqui-row-container">
+					    <card-row acqui="acqui"></card-row>
+					</div>
+					<button class="btn btn-default show-more" type="button" ng-if="!(quantity >= filteredItems.length)" ng-click="updateQuantity()" class="">Show More</button>
+				</section>
+			</section>
+		</main>
+		<footer>
+
+		</footer>
+		<script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+		<script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+		<script defer src="https://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.16/angular-filter.min.js"></script>
+		<script defer src="js/app.js"></script>
+		<script defer src="js/directives/card.js"></script>
+		<script defer src="js/directives/news.js"></script>
+		<script defer src="js/directives/row.js"></script>
+		<script defer src="js/controllers/acquiController.js"></script>
+		<script defer src="js/services/acquiFactory.js"></script>
+		<script defer src="js/filters.js"></script>
+	</body>
+</html>

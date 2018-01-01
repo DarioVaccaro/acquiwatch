@@ -1,0 +1,459 @@
+.header-box-style {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+}
+.filter-bar-style {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  margin: 0 25px 0 25px;
+}
+.global-button-style {
+  padding: 5px 20px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: #252525;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+nav {
+  background: #1E1E1E;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.36);
+  color: #FFFFFF;
+}
+nav #nav-container {
+  width: 1211px;
+  margin: 0 auto;
+}
+nav #nav-container #nav-brand {
+  display: inline-block;
+}
+nav #nav-container #nav-brand span {
+  font-weight: 800;
+}
+nav #nav-container #nav-navigation {
+  display: inline-block;
+}
+nav #nav-container #nav-navigation ul {
+  list-style: none;
+}
+nav #nav-container #nav-navigation ul li {
+  display: inline;
+  font-size: 14px;
+  margin: 0 5px 0 5px;
+  color: white;
+}
+nav #nav-container #nav-navigation ul li a {
+  text-decoration: none;
+  tranition: 0.3s ease-in;
+}
+nav a:hover {
+  color: #CBCBCB;
+  tranition: 0.3s ease-in;
+}
+main {
+  margin: auto;
+  width: 1261px;
+  padding: 25px 0 0 0;
+  text-align: center;
+}
+main header #primary-header-panel {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 0;
+  width: 733px;
+}
+main header #newsletter-header-panel {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 21px 0 0;
+  width: 354px;
+}
+main header #newsletter-header-panel #newsletter-content header #form-bg-image {
+  background-image: url(../img/newsletter.png);
+  height: 150px;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+main header #newsletter-header-panel #newsletter-content header #form-bg-image div {
+  background: #E25650;
+  border-radius: 4px;
+  height: 83px;
+  width: 282px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+main header #newsletter-header-panel #newsletter-content header #form-bg-image div h1 {
+  color: #FFF;
+  font-weight: 800;
+  font-size: 18px;
+}
+main header #newsletter-header-panel #newsletter-content div h1 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #FFF;
+  width: 250px;
+  margin: 20px auto;
+}
+main header #newsletter-header-panel #newsletter-content div form {
+  width: 300px;
+  margin: auto;
+}
+main header #newsletter-header-panel #newsletter-content div form input {
+  padding: 5px 20px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 10px 10px;
+  color: #CBCBCB;
+}
+main header #newsletter-header-panel #newsletter-content div form #form-name {
+  display: block;
+  width: 280px;
+  margin-bottom: 10px;
+}
+main header #newsletter-header-panel #newsletter-content div form #form-email {
+  width: 166px;
+}
+main header #newsletter-header-panel #newsletter-content div form button {
+  padding: 5px 20px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  background: #E25650;
+  color: white;
+  padding: 10px 30px;
+  margin: 0 0 0 8px;
+}
+main header #secondary-header-panel {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 0;
+  width: 832px;
+  text-align: left;
+  position: relative;
+}
+main header #secondary-header-panel .temporary-content {
+  padding: 20px 0 20px 20px;
+  color: white;
+}
+main header #secondary-header-panel .temporary-content h1 {
+  margin: 0 0 15px 0;
+  font-weight: 800;
+  font-size: 35px;
+  width: 400px;
+  line-height: 45px;
+}
+main header #secondary-header-panel .temporary-content h2 {
+  margin: 0 0 15px 0;
+  font-weight: 800;
+  font-size: 18px;
+}
+main header #secondary-header-panel .temporary-content p {
+  margin: 0 0 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  width: 350px;
+}
+main header #secondary-header-panel .temporary-content button {
+  padding: 7px 30px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 2px;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 20px 0;
+}
+main #interview-card-display {
+  margin: 0 0 25px 0;
+}
+main #interview-card-display .interview-card {
+  width: 593px;
+  height: 250px;
+  display: inline-block;
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  vertical-align: top;
+  color: #FFFFFF;
+  text-align: left;
+}
+main #interview-card-display .interview-card #interview-card-info {
+  width: 303px;
+  height: 200px;
+  padding: 20px 20px 20px 20px;
+  display: inline-block;
+  position: relative;
+}
+main #interview-card-display .interview-card #interview-card-info #interview-title {
+  padding: 5px 20px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  background: #AC50EF;
+}
+main #interview-card-display .interview-card #interview-card-info h1 {
+  margin: 15px 0 15px 0;
+  font-weight: 800;
+}
+main #interview-card-display .interview-card #interview-card-info p {
+  font-size: 14px;
+}
+main #interview-card-display .interview-card #interview-card-info h2 {
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+}
+main #interview-card-display .interview-card #interview-card-info #interview-valuation {
+  color: #38FFAB;
+}
+main #interview-card-display .interview-card #interview-card-image {
+  width: 250px;
+  display: inline-block;
+  height: 100%;
+  float: right;
+  background-image: url('../img/interview/IV1.png');
+  background-position: center;
+  background-size: cover;
+}
+main #interview-card-display #second-interview-card {
+  margin: 0 22px 0 20px;
+}
+main #interview-card-display #first-interview-card,
+main #interview-card-display #third-interview-card {
+  width: 284px;
+}
+main #interview-card-display #first-interview-card #interview-card-info,
+main #interview-card-display #third-interview-card #interview-card-info {
+  width: 244px;
+}
+main #interview-card-display #first-interview-card #interview-card-image,
+main #interview-card-display #third-interview-card #interview-card-image {
+  display: none;
+}
+main #acqui-display #acqui-filter-bar {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  margin: 0 25px 0 25px;
+  text-align: left;
+}
+main #acqui-display #acqui-filter-bar .button-container button {
+  padding: 5px 20px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin: 15px 5px 15px 5px;
+  color: white;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(1) {
+  background: #38FFAB;
+  margin: 15px 5px 15px 15px;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(2) {
+  background: #AC50EF;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(3) {
+  background: #E25650;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(4) {
+  background: #E9A24C;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(5) {
+  background: #E94FC2;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(6) {
+  background: #E7E146;
+}
+main #acqui-display #acqui-filter-bar .button-container button:nth-child(7) {
+  background: #FF332C;
+}
+main #acqui-display #acqui-card-display {
+  margin: 25px 0 0 0;
+}
+main #acqui-display #acqui-card-display .acqui-card-container {
+  display: inline-block;
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  vertical-align: top;
+  height: 350px;
+  width: 284px;
+  color: #FFFFFF;
+  margin: 0 12.5px 25px 12.5px;
+  text-align: left;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section header div {
+  height: 150px;
+  background-position: top center;
+  background-size: cover;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body {
+  padding: 15px 15px 15px 15px;
+  position: relative;
+  height: 154px;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body h1 {
+  margin: 0 0 0 0;
+  font-size: 30px;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body h6 {
+  margin: 0 0 0 0;
+  font-weight: 400;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body h2 {
+  margin: 0 0 0 0;
+  font-weight: 800;
+  color: #E9A24C;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body p {
+  margin: 0 0 0 0;
+  font-size: 12px;
+  font-weight: 300;
+  width: 250px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body u a {
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+main #acqui-display #acqui-card-display .acqui-card-container card-info section .card-body h3 {
+  margin: 0 0 0 0;
+  display: inline;
+  float: right;
+}
+main #acqui-display #acqui-row-display {
+  margin: 25px 0 0 0;
+}
+main #acqui-display #acqui-row-display .acqui-row-container {
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin: 0 25px 25px 25px;
+  text-align: left;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row section {
+  padding: 10px 10px 10px 10px;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row section .company-name {
+  display: inline-block;
+  margin: 0 50px 0 10px;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row section .company-name .seller-name {
+  margin: 0 0 5px 0;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row section .company-name .buyer-name {
+  margin: 0 0 0 0;
+  font-weight: 400;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row .value {
+  display: inline;
+  margin: 0 0 0 0;
+  font-weight: 800;
+  color: #38FFAB;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row .date {
+  display: inline;
+  margin: 0 0 0 0;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row .description {
+  display: inline;
+  margin: 0 0 0 0;
+  font-size: 12px;
+  font-weight: 300;
+  width: 250px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row .industry {
+  display: inline-block;
+  float: right;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row .industry img {
+  width: 30px;
+}
+main #acqui-display #acqui-row-display .acqui-row-container card-row .industry .industry-name {
+  margin: 0 0 0 0;
+  display: inline;
+}
+main #news-card-display {
+  margin: 0 0 25px 0;
+}
+main #news-card-display div .news-card-container {
+  display: inline-block;
+  background: #323232;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), inset 0 0 3px 0 rgba(102, 102, 102, 0.14);
+  border-radius: 4px;
+  vertical-align: top;
+  height: 180px;
+  width: 284px;
+  color: #FFFFFF;
+  margin: 25px 12.5px 0 12.5px;
+  text-align: left;
+}
+main #news-card-display div .news-card-container news-card section {
+  padding: 18px 15px 15px 15px;
+}
+main #news-card-display div .news-card-container news-card section a .news-site-link {
+  background: #E25650;
+  padding: 5px 20px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+main #news-card-display div .news-card-container news-card section a h2 {
+  font-size: 12px;
+  margin-top: 15px;
+}
+main #news-card-display div .news-card-container news-card section a h1 {
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 8px;
+}
+footer {
+  background: #1E1E1E;
+  height: 200px;
+}

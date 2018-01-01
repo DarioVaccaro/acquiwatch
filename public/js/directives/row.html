@@ -1,0 +1,13 @@
+<section>
+	<div class="company-name">
+		<h2 class="seller-name" ng-style="setSize(acqui.seller.name.length)">{{acqui.seller.name}}</h2>
+		<h6 class="buyer-name">Acquired By: <strong>{{acqui.buyer.name}}</strong></h6>
+	</div>
+	<h1 class="value" ng-style="{ color: acqui.value=='undisclosed'? '#FF2100':'', fontSize: setValueSize(acqui.value) }">{{acqui.value | shortNumber}}</h1>
+	<h3 class="date">{{acqui.date | date: 'MM'}}<span>{{acqui.date | date: '.dd.'}}</span>{{acqui.date | date: 'yyyy'}}</h3>
+	<p class="description">{{acqui.seller.desc | description}}</p>
+	<div class="industry">
+		<img class="industry-icon" ng-src="img/field/{{acqui.seller.field}}.png">
+		<h3 class="industry-name">{{acqui.seller.field}}</h3>
+	</div>
+</section>
