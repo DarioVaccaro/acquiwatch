@@ -1,4 +1,3 @@
 public/libs/* linguist-vendored
-bower_components/* linguist-vendored
-node_modules/* linguist-vendored
-node_modules/* linguist-language=javascript
+bower_components/* linguist-language=Javascript
+node_modules/* linguist-language=Javascript
